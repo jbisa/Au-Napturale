@@ -1,0 +1,22 @@
+body {
+	background: url(/images/homepage2.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-0-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+
+.centered {
+  left: 0;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.white-text {
+	color: white;
+}
