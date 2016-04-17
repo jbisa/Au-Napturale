@@ -7,16 +7,27 @@ body {
 	text-align: center;
 }
 
-.centered {
-  left: 0;
-  margin: auto;
-  margin-top: -100px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .white-text {
 	color: white;
+}
+
+.center-form {
+	text-align: center;
+}
+
+.form-control {
+	display: inline !important;
+	width: 50% !important;
+}
+
+#content {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:50em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -25em; /*set to a negative number 1/2 of your width*/
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Montserrat', sans-serif;
 }

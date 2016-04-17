@@ -7,20 +7,30 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
   	<link rel="stylesheet" type="text/css" href="css/homepage.css">
   	<title>Au Napturale</title>
 </head>
 <body>
-	<div class="centered">
-		<div class="white-text">
-			<h1>Au Napturale</h1>
-			<h3>Your Hair. Your Style. Your Journey.</h3>
-			<p>Au Napturale has a wide array of hair products for all hair types and styles.</p>
-			<p>Leave your email and we'll let you know once the site goes live!</p>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+		<div id="content">
+			<div class="white-text">
+				<h1>Au Napturale</h1>
+				<h3>Your Hair. Your Style. Your Journey.</h3>
+				<p>We have a wide array of products for all hair types and styles.</br> Register today and we'll notify you once the site goes live!</p>
+			</div>
+			<div class="form-group col-xs-12">
+				<input type="text" class="form-control" placeholder="Enter Email" ng-model="customerEmail">
+				<button type="button" class="btn btn-primary">Notify Me</button>
+			</div>
 		</div>
-		<input type="text" placeholder="Enter Email">
-		<button type="button" class="btn btn-primary">Notify Me</button>
 	</div>
+	</div>
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 </body>
 </html>
