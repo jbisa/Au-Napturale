@@ -10,6 +10,7 @@ var user = {
 	},
 
 	create: function(req, res, next) {
+		console.log('POST request: ' + req.body);
 		res.send(req.body);
 	},
 
@@ -30,7 +31,7 @@ var user = {
 
 	getAll: function(req, res, next) {
 		User.find(function(err, data) {
-			if (err) console.error;
+			if (err) console.error(err);
 			console.log('GET request: ' + data);
 			res.json(data);
 		});
