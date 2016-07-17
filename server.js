@@ -19,7 +19,7 @@ var user 	= require('./public/server/controllers/user_controller');
 router.get('/users', user.getAll);
 
 // Create a user
-//router.post('/user', user.create);
+router.post('/user', user.create);
 
 // Get one user, update one user, delete one user
 router.route('/user/:id')
