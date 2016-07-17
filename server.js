@@ -16,9 +16,6 @@ var router 	= express.Router();
 var user 	= require('./public/server/controllers/user_controller');
 
 // Get all users
-//app.get('/users', function(req, res) {
-//	console.log('I received a get request!!!');
-//});
 router.get('/users', user.getAll);
 
 // Create a user
