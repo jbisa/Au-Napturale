@@ -22,9 +22,12 @@
 				<h1>Au Napturale</h1>
 				<h3>Your Hair. Your Style. Your Journey.</h3>
 				<p>Search our wide array of products based on your own personalized hair profile.</br> Register today and we'll notify you once the site goes live!</p>
+				<div ng-show="registeredUser">
+					<h3>Thank you for registering, we'll send you an email soon!</h3>
+				</div>
 			</div>
-			<div class="form-group col-xs-12">
-				<input type="text" class="form-control" placeholder="Enter Email" ng-model="customerEmail">
+			<div ng-show="!registeredUser" class="form-group col-xs-12">
+				<input type="text" class="form-control" placeholder="Enter Email" ng-model="customerEmail" ng-enter="saveUser()">
 				<button type="button" class="btn btn-primary" ng-click="saveUser()">Notify Me</button>
 			</div>
 		</div>
@@ -36,5 +39,6 @@
 	<!-- AngularJs -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 	<script type="text/javascript" src="client/controllers/auNapCtrl.js"></script>
+	<script type="text/javascript" src="client/directives/ngEnterDirective.js"></script>
 </body>
 </html>
