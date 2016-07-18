@@ -16,16 +16,10 @@ var router 	= express.Router();
 var user 	= require('./public/server/controllers/user_controller');
 
 // Get all users
-router.get('/users', user.getAll);
+router.get('/get-users', user.getAllUsers);
 
 // Create a user
-router.post('/user', user.create);
-
-// Get one user, update one user, delete one user
-router.route('/user/:id')
-	.get(user.read)
-	.put(user.update)
-	.delete(user.delete)
+router.post('/add-user', user.addUser);
 
 // Register the routing
 app.use('/', router);
