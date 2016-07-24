@@ -32,8 +32,15 @@ connection.on('error', console.error);
 connection.once('open', startServer);
 
 // Start up server
+var env = process.env.NODE_ENV;
+var port;
+if (env === 'prod') {
+	port = 3030;
+} else {
+	port = 3000;
+}
 function startServer() {
-	var server = app.listen(3000, function() {
+	var server = app.listen(port, function() {
 		var port = server.address().port;
 		console.log('Server running on port ' + port);
 	});
